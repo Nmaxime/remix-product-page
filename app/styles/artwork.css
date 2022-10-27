@@ -1,0 +1,88 @@
+.artwork {
+  min-height: inherit;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-rows: auto 20vh;
+  row-gap: 1rem;
+}
+.artwork_layout {
+  display: grid;
+  grid-template-columns: 70vw 1fr;
+}
+.artwork_presentation {
+  display: grid;
+  grid-template-rows: max-content min-content;
+  row-gap: 2rem;
+}
+.artwork_image {
+  display: flex;
+  justify-self: center;
+  max-height: 50vh;
+}
+.artwork_accordion {
+  display: grid;
+  row-gap: 1rem;
+  margin: auto 0 auto 1rem;
+}
+.artwork_accordion-trigger {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid black;
+}
+.artwork_accordion-content {
+  padding: 1rem 0 2rem 0;
+  z-index: 1;
+}
+.artwork_info-side-panel {
+  justify-self: center;
+  display: grid;
+  grid-template-rows: repeat(4, min-content) auto;
+  row-gap: 2rem;
+}
+.artwork_title {
+  font-size: large;
+  font-weight: bold;
+}
+.artwork_artist {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 1rem;
+  max-height: 5rem;
+  font-weight: bold;
+}
+.artwork_artist-full-name {
+  color: #e8c3a2;
+}
+.artwork_artist-country {
+  color: gray;
+}
+.artwork_creation {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1rem;
+}
+.artwork_price {
+  font-size: larger;
+  font-weight: bold;
+}
+.artwork_buy-actions {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  row-gap: 1rem;
+}
+.artwork_recommandations {
+  padding: 1rem 0.5rem;
+  height: 10rem;
+  width: 80vw;
+  margin: auto;
+}
+
+/*# sourceMappingURL=artwork.css.map */

@@ -1,0 +1,106 @@
+.artwork {
+    // Full screen
+    min-height: inherit; 
+    // We include the padding in height calculation to avoid a vertical overflow
+    box-sizing: border-box; 
+    padding: 0.5rem;
+
+    display: grid;
+    grid-template-rows: auto 20vh;
+    row-gap: 1rem;
+
+    &_layout {
+        display: grid;
+        grid-template-columns: 70vw 1fr;
+    }
+
+    &_presentation {
+        display: grid;
+        grid-template-rows: max-content min-content;
+        row-gap: 2rem;
+    }
+
+    &_image {
+        display: flex;
+        justify-self: center;
+        max-height: 50vh;
+    }
+
+    &_accordion {
+        display: grid;
+        row-gap: 1rem;
+        margin: auto 0 auto 1rem;
+        
+        &-trigger { 
+            // Disable default button styles
+            border: none;
+            background: none;
+            color: inherit;
+            font: inherit;
+            cursor: pointer;
+            
+            width: 100%;
+            text-align: left;
+            font-weight: bold;
+            padding-bottom: 0.2rem;
+            border-bottom: 0.1rem solid black;
+        }
+        &-content { 
+            padding: 1rem 0 2rem 0;
+            z-index: 1;
+        }
+    }
+
+    &_info-side-panel {
+        justify-self: center;
+        
+        display: grid;
+        grid-template-rows: repeat(4, min-content) auto;
+        row-gap: 2rem;
+    }
+
+    &_title {
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    &_artist {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        column-gap: 1rem;
+        max-height: 5rem;
+        font-weight: bold;
+
+        &-full-name {
+            color: #e8c3a2;
+        }
+
+        &-country {
+            color: gray;
+        }
+    }
+
+    &_creation {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 1rem;
+    }
+
+    &_price {
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    &_buy-actions {
+        display: grid;
+        grid-template-rows: repeat(2, max-content);
+        row-gap: 1rem;
+    }
+
+    &_recommandations {
+        padding: 1rem 0.5rem;
+        height: 10rem;
+        width: 80vw;
+        margin: auto;
+    }
+}

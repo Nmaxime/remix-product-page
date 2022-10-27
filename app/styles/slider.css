@@ -1,0 +1,26 @@
+.slider_image-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 13rem;
+}
+
+.slider_image {
+  max-width: 100%;
+  object-fit: cover;
+  width: min-content;
+}
+
+.swiper {
+  height: inherit;
+}
+
+.swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-next.swiper-button-disabled {
+  display: none;
+}
+
+/*# sourceMappingURL=slider.css.map */

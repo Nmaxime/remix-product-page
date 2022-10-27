@@ -1,0 +1,25 @@
+html {
+    min-height: 100vh;
+}
+
+body {
+    min-height: inherit;
+    margin: 0;
+}
+
+.button {
+    border: 0.15rem solid black;
+    height: 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    &[data-button-mode="black"] {
+        color: white;
+        background-color: black;
+    }
+
+    &[data-button-mode="white"] {
+        color: black;
+        background-color: white;
+    }
+}
